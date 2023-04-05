@@ -2,7 +2,7 @@ import openai
 import os
 
 # Set up the OpenAI API client
-openai.api_key = "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"
+openai.api_key = os.getenv('OPEN_AI_KEY')
 
 # Read the jumbled pages from a text file
 input_file = "cains.txt"
